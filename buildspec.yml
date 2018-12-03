@@ -7,7 +7,7 @@ phases:
       - ./gradlew assembleDebug assembleDebugAndroidTest
   post_build:
     commands:
-      - aws s3 cp ./app/**/*.apk s3://howru-build-storage/howRU_build
+      - aws s3 -v cp . s3://howru-build-storage/howRU_build
 artifacts:
   files:
      - './app/**/*.apk'
