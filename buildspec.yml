@@ -5,6 +5,9 @@ phases:
     commands:
       - chmod +x ./gradlew
       - ./gradlew assembleDebug assembleDebugAndroidTest
+  post_build:
+    commands:
+      - aws s3 sync ./app/**/*.apk s3://howru-build-storage/howRU_build
 artifacts:
   files:
      - './app/**/*.apk'
