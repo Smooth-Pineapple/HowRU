@@ -1,12 +1,7 @@
 package smoothpineapple.com.howru.activities;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
-
-import smoothpineapple.com.howru.R;
 
 import com.yarolegovich.discretescrollview.DiscreteScrollView;
 import com.yarolegovich.discretescrollview.InfiniteScrollAdapter;
@@ -14,6 +9,7 @@ import com.yarolegovich.discretescrollview.InfiniteScrollAdapter;
 import java.util.Arrays;
 import java.util.List;
 
+import smoothpineapple.com.howru.R;
 import smoothpineapple.com.howru.views.carousel.CarouselItem;
 import smoothpineapple.com.howru.views.carousel.CarouselView;
 
